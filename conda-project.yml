@@ -1,0 +1,16 @@
+name: my-project
+environments:
+  lab:
+    - environment-lab.yml
+  kernel:
+    - environment-kernel.yml
+commands:
+  lab:
+    cmd: "jupyter lab"
+    environment: lab
+  serve:
+    cmd: "panel serve panel-example.ipynb --show"
+    environment: kernel
+  install-kernel:
+    cmd: "python -m ipykernel install --prefix=./envs/lab --name panel"
+    environment: kernel

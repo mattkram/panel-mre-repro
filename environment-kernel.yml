@@ -1,0 +1,12 @@
+name: lembas
+channels:
+  - conda-forge
+dependencies:
+  - python =3.10
+  - pandas <2
+  - ipykernel
+  - panel
+  - hvplot
+  - notebook
+platforms:
+  - osx-arm64
