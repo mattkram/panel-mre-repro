@@ -3,6 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - jupyterlab =3
-  - jupyter_bokeh
+  - pyviz_comms
 platforms:
   - osx-arm64
